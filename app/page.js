@@ -5,12 +5,12 @@ export default function Home() {
     <main>
       <h1>Home</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur id
-        sed eligendi? Vero delectus impedit nesciunt in ipsum unde!
-        Reprehenderit blanditiis ipsam veritatis, consequatur quibusdam quae
-        facere laudantium a iste asperiores quaerat cum hic dolores labore amet
-        deserunt, repellat minus expedita nihil aut. Voluptatum harum fugit
-        ducimus eligendi id labore...
+        New Content Here: Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Consectetur id sed eligendi? Vero delectus impedit nesciunt in
+        ipsum unde! Reprehenderit blanditiis ipsam veritatis, consequatur
+        quibusdam quae facere laudantium a iste asperiores quaerat cum hic
+        dolores labore amet deserunt, repellat minus expedita nihil aut.
+        Voluptatum harum fugit ducimus eligendi id labore...
       </p>
     </main>
   );
