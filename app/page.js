@@ -10,7 +10,7 @@ export default function Home() {
         Reprehenderit blanditiis ipsam veritatis, consequatur quibusdam quae
         facere laudantium a iste asperiores quaerat cum hic dolores labore amet
         deserunt, repellat minus expedita nihil aut. Voluptatum harum fugit
-        ducimus eligendi id labore.
+        ducimus eligendi id labore...
       </p>
     </main>
   );
