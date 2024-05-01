@@ -85,7 +85,7 @@ const MainLayout = ({ children }) => {
         </ul>
       </aside>
 
-      <div className={`${open ? "blur-lg" : "blur-0"}`}>
+      <div className={`${open ? "max-lg:blur-lg" : "blur-0"}`}>
         <MainHeader />
         <main className="lg:ml-[280px]">{children}</main>
       </div>
