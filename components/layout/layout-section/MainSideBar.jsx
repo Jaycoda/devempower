@@ -63,13 +63,19 @@ const MainSideBar = () => {
             <FaAngleRight />
           </div>
           <ul className="ml-8 mt-4">
-            <li className="flex flex-row justify-center items-center gap-4">
+            <li className="flex flex-row justify-start items-center gap-4 my-1">
               <SiSinglestore />
               <Link
                 href="/complex/horizontal-scrollbar"
                 onClick={closeSideBarHandler}
               >
                 Ho-Scrollbar
+              </Link>
+            </li>
+            <li className="flex flex-row justify-start items-center gap-4 my-1">
+              <SiSinglestore />
+              <Link href="/complex/tabs" onClick={closeSideBarHandler}>
+                Tabs
               </Link>
             </li>
           </ul>

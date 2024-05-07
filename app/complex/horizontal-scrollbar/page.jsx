@@ -64,7 +64,7 @@ const HorizontalScrollbarPage = () => {
             key={index}
             className="border-2 border-gray-200 p-1 shrink-0 rounded-lg hover:border-gray-400 cursor-pointer"
           >
-            <h1>{item}</h1>
+            <h1 className="text-blue-500">{item}</h1>
           </div>
         ))}
       </HorizontalScrollbar>
@@ -72,7 +72,7 @@ const HorizontalScrollbarPage = () => {
       <br />
       <br />
       <h1 className="text-blue-800 text-2xl">Instagram Stories</h1>
-      <HorizontalScrollbar>
+      <HorizontalScrollbar scrollbar={true}>
         {users.map((item) => (
           <div key={item.id} className=" shrink-0">
             <img
