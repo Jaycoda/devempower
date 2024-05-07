@@ -78,6 +78,12 @@ const MainSideBar = () => {
                 Tabs
               </Link>
             </li>
+            <li className="flex flex-row justify-start items-center gap-4 my-1">
+              <SiSinglestore />
+              <Link href="/complex/slider" onClick={closeSideBarHandler}>
+                Slider
+              </Link>
+            </li>
           </ul>
         </li>
 
