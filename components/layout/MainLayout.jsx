@@ -5,6 +5,7 @@ import { MenuContext } from "@/context/MenuContext";
 
 import MainHeader from "./layout-section/MainHeader";
 import MainSideBar from "./layout-section/MainSideBar";
+import MobileButtonNavigation from "./layout-section/MobileButtonNavigation";
 
 const MainLayout = ({ children }) => {
   const { open } = useContext(MenuContext);
@@ -15,6 +16,7 @@ const MainLayout = ({ children }) => {
         <MainHeader />
         <main className="lg:ml-[280px]">{children}</main>
       </div>
+      <MobileButtonNavigation />
     </div>
   );
 };
