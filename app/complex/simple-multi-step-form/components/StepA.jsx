@@ -12,6 +12,7 @@ const StepA = ({ formData, handleChangeInput, handleNextStep }) => {
           type="text"
           name="firstName"
           value={formData.firstName}
+          placeholder="Enter your name"
           onChange={(e) => {
             handleChangeInput(e);
           }}

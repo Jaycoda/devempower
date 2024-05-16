@@ -16,9 +16,9 @@ const MainSideBar = () => {
   };
   return (
     <aside
-      className={`bg-white top-4 left-4 lg:fixed lg:block lg:top-16 lg:left-8 rounded-lg overflow-hidden transition-all duration-100 ${
+      className={`bg-white top-4 left-4 lg:fixed lg:block lg:top-16 lg:left-8 rounded-lg overflow-hidden transition-all duration-100  ${
         open ? "w-60 p-4 block fixed" : "w-0 hidden"
-      } lg:w-60 lg:p-4 z-20 shadow-lg `}
+      } lg:w-60 lg:p-4 max-lg:z-20 shadow-lg `}
     >
       <ul>
         <li className="flex justify-end items-center lg:hidden">
@@ -47,10 +47,16 @@ const MainSideBar = () => {
             <FaAngleRight />
           </div>
           <ul className="ml-8 mt-4">
-            <li className="flex flex-row justify-center items-center gap-4">
+            <li className="flex flex-row justify-start items-center gap-4">
               <SiSinglestore />
               <Link href="/singular/selectbox" onClick={closeSideBarHandler}>
                 Select Box
+              </Link>
+            </li>
+            <li className="flex flex-row justify-start items-center gap-4">
+              <SiSinglestore />
+              <Link href="/singular/modal" onClick={closeSideBarHandler}>
+                Modal
               </Link>
             </li>
           </ul>
