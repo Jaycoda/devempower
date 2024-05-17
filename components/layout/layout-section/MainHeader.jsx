@@ -1,18 +1,47 @@
 "use client";
 
 import { MenuContext } from "@/context/MenuContext";
-import React, { useContext } from "react";
-import { FaBars } from "react-icons/fa";
+import React, { useState, useContext, useEffect } from "react";
+import { FaBars, FaSun, FaMoon } from "react-icons/fa";
 import UserAreaSelectBox from "./UserAreaSelectBox";
 import LanguageSelectBox from "./LanguageSelectBox";
 
 const MainHeader = () => {
+  const initialTheme = localStorage.getItem("theme") || "light";
+  const [theme, setTheme] = useState(initialTheme);
   const { toggle } = useContext(MenuContext);
 
+  const themeSwitcherHandler = (newTheme) => {
+    if (newTheme === "dark" || newTheme === "light") {
+      setTheme(newTheme);
+      localStorage.setItem("theme", newTheme);
+    }
+  };
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [theme]);
+
   return (
-    <div className="bg-white flex justify-between items-center px-4 h-12 mb-4">
+    <div className="bg-white dark:bg-slate-800 dark:text-white flex justify-between items-center px-4 h-12 mb-4">
       <div>Brand</div>
       <div className="flex justify-center items-center gap-3">
+        {theme === "light" ? (
+          <FaMoon
+            onClick={() => themeSwitcherHandler("dark")}
+            className="cursor-pointer"
+          />
+        ) : (
+          <FaSun
+            className="cursor-pointer"
+            onClick={() => themeSwitcherHandler("light")}
+          />
+        )}
+
         <div>
           <LanguageSelectBox />
         </div>

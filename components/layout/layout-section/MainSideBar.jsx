@@ -16,9 +16,9 @@ const MainSideBar = () => {
   };
   return (
     <aside
-      className={`bg-white top-4 left-4 lg:fixed lg:block lg:top-16 lg:left-8 rounded-lg overflow-hidden transition-all duration-100  ${
+      className={`dark:bg-slate-600 dark:text-white bg-white top-4 left-4 lg:fixed lg:block lg:top-16 lg:left-8 rounded-lg overflow-hidden transition-all duration-100  ${
         open ? "w-60 p-4 block fixed" : "w-0 hidden"
-      } lg:w-60 lg:p-4 max-lg:z-20 shadow-lg `}
+      } lg:w-60 lg:p-4 lg:z-30 shadow-lg `}
     >
       <ul>
         <li className="flex justify-end items-center lg:hidden">
@@ -57,6 +57,24 @@ const MainSideBar = () => {
               <SiSinglestore />
               <Link href="/singular/modal" onClick={closeSideBarHandler}>
                 Modal
+              </Link>
+            </li>
+            <li className="flex flex-row justify-start items-center gap-4">
+              <SiSinglestore />
+              <Link href="/singular/rhform" onClick={closeSideBarHandler}>
+                RH Form
+              </Link>
+            </li>
+            <li className="flex flex-row justify-start items-center gap-4">
+              <SiSinglestore />
+              <Link href="/singular/rhf-yup" onClick={closeSideBarHandler}>
+                RHF Yup
+              </Link>
+            </li>
+            <li className="flex flex-row justify-start items-center gap-4">
+              <SiSinglestore />
+              <Link href="/singular/context-menu" onClick={closeSideBarHandler}>
+                Context Menu
               </Link>
             </li>
           </ul>

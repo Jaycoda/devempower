@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-white rounded-lg mx-4 p-4">
+    <div className="dark:bg-slate-900 dark:text-white bg-white rounded-lg mx-4 p-4">
       <h1>Home</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
